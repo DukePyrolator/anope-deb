@@ -1,0 +1,70 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH ANOPE 2.0 "January 2014"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+anope \- Anope is a set of IRC Services designed for flexibility and ease of use.
+.SH SYNOPSIS
+.B anope
+[\-\-nofork] [\-\-debug] [\-\-version] [\-\-nothird] [\-\-noexpire] [\-\-readonly]
+.br
+.SH DESCRIPTION
+This manual page documents briefly the
+.B anope 
+command.
+
+.PP
+.\" TeX users may be more comfortable with the \fB<whatever>\fP and
+.\" \fI<whatever>\fP escape sequences to invode bold face and italics, 
+.\" respectively.
+\fBAnope\fP is a set of Services for IRC networks that allows users to manage their nicks and channels in a secure and efficient way, and administrators to manage their network with powerful tools.
+.PP
+The \fPanope\fP command starts the services server, using ~/.anope/services.conf as its configuration file unless used with \fB\-\-config\fP.  
+
+.SH OPTIONS
+These programs follow the usual GNU command line syntax, with long
+options starting with two dashes (`-').
+A summary of options is included below.
+For the complete documentation for Anope, please see https://wiki.anope.org/.
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.TP
+.B \-v, \-\-version
+Show version of program.
+.TP
+.B \-c, \-\-config <config>
+Specify the config file
+.B \-d, \-\-debug
+Start Anope in debug mode
+.B \-n, \-\-nofork
+Do not fork to the background
+.B \-\-nothird
+Do not load third party modules on start
+.B -\s, \-\-support
+Short form for --debug --nothird
+.B -\r, \-\-readonly
+Start Anope in read only mode. (do not save changes to the db)
+.B -\e, \-\-noexpire
+Start Anope in noexpire mode, do not run the expiry routines for nicks and channels
+
+.SH SEE ALSO
+Anope fully documented at https://wiki.anope.org/.
+.SH AUTHOR
+Anope was written by the Anope team and more, for a full list see http://anope.org/team.php or read the credits in the README file.
+.PP
+This manual page was written by Jens Voss <Dukepyrolator@anope.org>,
+for the Debian project (but may be used by others).

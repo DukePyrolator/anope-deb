@@ -1,0 +1,3 @@
+[submodule "anope"]
+	path = anope
+	url = git@github.com:anope/anope.git
